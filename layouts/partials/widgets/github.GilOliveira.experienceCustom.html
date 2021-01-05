@@ -36,7 +36,7 @@
             <h4 class="card-title exp-title text-muted mt-0 mb-1">{{.title | markdownify | emojify}}</h4>
             {{- if .company_logo}}
             <div class="d-flex">
-                <img src="{{ printf "%s/%s" $media_dir .company_logo | relURL }}" width="56px" alt="{{.company | markdownify | emojify}}">
+                <img src="{{ printf "%s/%s" $media_dir .company_logo | relURL }}" height="56px" alt="{{.company | markdownify | emojify}}">
               {{if .company_url}}</a>{{end -}}
               <div class="ml-2">
             {{end -}}
